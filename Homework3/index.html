@@ -1,0 +1,45 @@
+<!--
+File: index.html
+GUI Assignment:  Homework 3
+Sarah Toth, UML C.S., Sarah_Toth@student.uml.edu
+Copyright (c) 2025 by Sarah.  All rights reserved.
+Updated by ST on June 15, 2025 at 8:30 PM
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic Multiplication Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Multiplication Table Generator</h1>
+    <!-- Form for user input -->
+    <form id="tableForm" novalidate>
+
+        <!-- Row input fields -->
+        <label for="startRow">Start Row:</label>
+        <input type="number" id="startRow" name="startRow" required>
+        <label for="endRow">End Row:</label>
+        <input type="number" id="endRow" name="endRow" required><br><br>
+
+        <!-- Column input fields -->
+        <label for="startCol">Start Column:</label>
+        <input type="number" id="startCol" name="startCol" required>
+        <label for="endCol">End Column:</label>
+        <input type="number" id="endCol" name="endCol" required><br><br>
+
+        <!-- Submit button -->
+        <button type="submit">Submit</button>
+
+        <!-- Area to display validation or error message -->
+        <p class="error" id="errorMsg"></p>
+    </form>
+
+    <!-- Container to hold table -->
+    <div id="tableContainer"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
